@@ -113,18 +113,6 @@ const projects = [
     icon: ShoppingCart,
     color: "from-green-600 to-emerald-600",
     bgColor: "bg-emerald-50"
-  },
-  {
-    id: 10,
-    title: "Dhaka Cityscapes in Motion",
-    description: "Computer graphics project showcasing Dhaka's energy with animated metro rail, traffic, day-night transitions using OpenGL/GLUT.",
-    image: "https://i.postimg.cc/wMv6KGRn/Graphics.jpg",
-    tags: ["C++", "OpenGL", "Computer Graphics"],
-    github: "https://github.com/34Sakib/Capturing-Dhaka-s-Vibrant-Essence-through-Cityscapes-in-Motion",
-    live: "#",
-    icon: Code,
-    color: "from-blue-600 to-indigo-600",
-    bgColor: "bg-blue-50"
   }
 ];
 

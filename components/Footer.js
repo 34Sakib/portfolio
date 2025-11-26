@@ -188,24 +188,22 @@ export default function Footer() {
             </p>
             
             {/* Social Links */}
-            <div className="flex space-x-3">
+            <div className="flex space-x-4">
               {socialLinks.map((item, index) => (
                 <a
                   key={item.name}
                   href={item.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`relative p-3 bg-white/10 backdrop-blur-sm rounded-xl border border-cyan-500/20 transition-all duration-500 transform hover:scale-110 hover:shadow-lg ${item.bgColor} group`}
+                  className={`relative p-3 bg-white/20 backdrop-blur-sm rounded-xl transition-all duration-300 transform hover:scale-110 hover:shadow-lg group ${item.bgColor}`}
                   aria-label={item.name}
                   style={{ animationDelay: `${index * 100}ms` }}
                 >
                   <span className="sr-only">{item.name}</span>
-                  <div className={`bg-gradient-to-r ${item.color} bg-clip-text text-transparent`}>
-                    <item.icon className="h-5 w-5 transition-transform group-hover:scale-110" />
-                  </div>
+                  <item.icon className="h-6 w-6 text-white transition-transform group-hover:scale-110" />
                   
                   {/* Animated tooltip */}
-                  <span className="absolute -top-12 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-cyan-600 to-blue-600 text-white text-xs py-2 px-3 rounded-lg opacity-0 group-hover:opacity-100 transition-all duration-300 pointer-events-none whitespace-nowrap">
+                  <span className="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-gray-900 text-white text-xs py-1.5 px-2.5 rounded-md opacity-0 group-hover:opacity-100 transition-all duration-300 pointer-events-none whitespace-nowrap shadow-lg border border-white/10">
                     {item.name}
                   </span>
                 </a>

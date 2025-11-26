@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { ArrowRight, Download, Sparkles, Code, Server, Database, Palette, Zap } from 'lucide-react';
 import { useEffect, useState } from 'react';
+import FloatingParticles from '../components/FloatingParticles';
 
 export default function Home() {
   const [isVisible, setIsVisible] = useState(false);
@@ -74,18 +75,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.05)_1px,transparent_1px)] bg-[size:50px_50px] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_50%,black,transparent)]"></div>
         
         {/* Floating particles */}
-        {[...Array(30)].map((_, i) => (
-          <div
-            key={i}
-            className="absolute w-1 h-1 bg-cyan-400 rounded-full opacity-40"
-            style={{
-              top: `${Math.random() * 100}%`,
-              left: `${Math.random() * 100}%`,
-              animation: `float ${Math.random() * 15 + 10}s infinite ease-in-out`,
-              animationDelay: `${Math.random() * 5}s`
-            }}
-          />
-        ))}
+        <FloatingParticles count={30} />
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
