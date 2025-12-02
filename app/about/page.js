@@ -14,31 +14,31 @@ export default function About() {
 
   const skills = {
     backend: [
-      { name: 'PHP', level: 90, icon: Server, color: 'from-green-500 to-emerald-500' },
+      { name: 'PHP', level: 90, icon: Server, color: 'from-emerald-500 to-teal-500' },
       { name: 'Laravel', level: 85, icon: Code, color: 'from-red-500 to-orange-500' },
-      { name: 'Java', level: 75, icon: Coffee, color: 'from-orange-500 to-amber-500' },
-      { name: 'C++', level: 70, icon: Zap, color: 'from-blue-500 to-cyan-500' },
-      { name: 'NestJS', level: 65, icon: Database, color: 'from-pink-500 to-rose-500' }
+      { name: 'Java', level: 75, icon: Coffee, color: 'from-amber-500 to-orange-500' },
+      { name: 'C++', level: 70, icon: Zap, color: 'from-blue-500 to-indigo-500' },
+      { name: 'NestJS', level: 65, icon: Database, color: 'from-rose-500 to-pink-500' }
     ],
     frontend: [
-      { name: 'HTML5', level: 95, icon: Palette, color: 'from-orange-500 to-red-500' },
+      { name: 'HTML5', level: 95, icon: Palette, color: 'from-orange-500 to-amber-500' },
       { name: 'CSS3', level: 90, icon: Palette, color: 'from-blue-500 to-indigo-500' },
       { name: 'JavaScript', level: 85, icon: Code, color: 'from-yellow-500 to-amber-500' },
-      { name: 'Bootstrap', level: 88, icon: Sparkles, color: 'from-purple-500 to-pink-500' },
-      { name: 'jQuery', level: 80, icon: Code, color: 'from-blue-400 to-cyan-400' },
-      { name: 'AJAX', level: 75, icon: Globe, color: 'from-green-400 to-emerald-400' },
-      { name: 'Next.js', level: 80, icon: Rocket, color: 'from-gray-800 to-black' }
+      { name: 'Bootstrap', level: 88, icon: Sparkles, color: 'from-violet-500 to-purple-500' },
+      { name: 'jQuery', level: 80, icon: Code, color: 'from-cyan-500 to-blue-500' },
+      { name: 'AJAX', level: 75, icon: Globe, color: 'from-emerald-500 to-teal-500' },
+      { name: 'Next.js', level: 80, icon: Rocket, color: 'from-gray-700 to-gray-800' }
     ],
     database: [
-      { name: 'MySQL', level: 85, icon: Database, color: 'from-blue-500 to-cyan-500' },
+      { name: 'MySQL', level: 85, icon: Database, color: 'from-cyan-500 to-blue-500' },
       { name: 'PostgreSQL', level: 70, icon: Database, color: 'from-indigo-500 to-purple-500' },
       { name: 'TypeORM', level: 65, icon: Database, color: 'from-gray-600 to-gray-700' }
     ],
     tools: [
       { name: 'Git', level: 80, icon: Code, color: 'from-orange-500 to-red-500' },
       { name: 'VS Code', level: 90, icon: Code, color: 'from-blue-500 to-cyan-500' },
-      { name: 'XAMPP', level: 85, icon: Server, color: 'from-green-500 to-emerald-500' },
-      { name: 'Postman', level: 75, icon: Globe, color: 'from-orange-500 to-amber-500' }
+      { name: 'XAMPP', level: 85, icon: Server, color: 'from-emerald-500 to-teal-500' },
+      { name: 'Postman', level: 75, icon: Globe, color: 'from-amber-500 to-orange-500' }
     ]
   };
 
@@ -76,7 +76,9 @@ export default function About() {
       image: "https://i.postimg.cc/Fz7Z3jgY/Sakib-Al-Mahamud-php-laravel-6-C32929-page-0001.jpg",
       tags: ["PHP", "Laravel", "Vue.js"],
       icon: Laptop,
-      color: "from-blue-500 to-cyan-500"
+      color: "from-blue-500 to-indigo-600",
+      bgGradient: "bg-gradient-to-br from-blue-50 to-indigo-50",
+      borderColor: "border-blue-200"
     },
     {
       id: 2,
@@ -87,7 +89,9 @@ export default function About() {
       image: "https://i.postimg.cc/02jhNMzF/UC-839428f7-2118-4c5d-9617-e8f0c5e3d66a.jpg",
       tags: ["PHP", "MySQL", "E-commerce"],
       icon: Coffee,
-      color: "from-green-500 to-emerald-500"
+      color: "from-emerald-500 to-teal-600",
+      bgGradient: "bg-gradient-to-br from-emerald-50 to-teal-50",
+      borderColor: "border-emerald-200"
     },
     {
       id: 3,
@@ -98,18 +102,22 @@ export default function About() {
       image: "https://i.postimg.cc/7h9DrpQY/image.png",
       tags: ["Laravel 11", "E-commerce", "PHP"],
       icon: ShoppingCart,
-      color: "from-purple-500 to-pink-500"
+      color: "from-purple-500 to-pink-500",
+      bgGradient: "bg-gradient-to-br from-purple-50 to-pink-50",
+      borderColor: "border-purple-200"
     },
     {
       id: 4,
-      title: 'CSS, JavaScript And PHP Complete Course',
-      subtitle: 'Web Development Fundamentals',
+      title: 'Web Development Course',
+      subtitle: 'CSS, JavaScript & PHP Complete',
       issuer: 'Udemy',
       year: '2023',
       image: 'https://i.postimg.cc/8z97Y6vN/UC-393bb8f7-304a-4573-9ccc-95b3cd0b8147.jpg',
       tags: ['CSS', 'JavaScript', 'PHP'],
       icon: BookOpen,
-      color: "from-orange-500 to-amber-500"
+      color: "from-amber-500 to-orange-500",
+      bgGradient: "bg-gradient-to-br from-amber-50 to-orange-50",
+      borderColor: "border-amber-200"
     },
     {
       id: 5,
@@ -120,16 +128,18 @@ export default function About() {
       image: 'https://i.postimg.cc/bwJnWPFv/Java-Script-Essentials-1-certificate-21-45655-3-student-aiub-edu-d92f9199-2f2f-49f1-bc5d-475791bfe8dc.jpg',
       tags: ['JavaScript', 'Programming'],
       icon: Award,
-      color: "from-yellow-500 to-amber-500"
+      color: "from-yellow-400 to-amber-500",
+      bgGradient: "bg-gradient-to-br from-yellow-50 to-amber-50",
+      borderColor: "border-yellow-200"
     }
   ];
 
   const softSkills = [
-    { name: 'Problem Solving', icon: Zap, color: 'from-green-500 to-emerald-500' },
+    { name: 'Problem Solving', icon: Zap, color: 'from-emerald-500 to-teal-500' },
     { name: 'Communication', icon: Globe, color: 'from-blue-500 to-cyan-500' },
     { name: 'Teamwork', icon: Users, color: 'from-purple-500 to-pink-500' },
     { name: 'Critical Thinking', icon: Brain, color: 'from-indigo-500 to-purple-500' },
-    { name: 'Adaptability', icon: RefreshCw, color: 'from-orange-500 to-amber-500' },
+    { name: 'Adaptability', icon: RefreshCw, color: 'from-amber-500 to-orange-500' },
     { name: 'Leadership', icon: Target, color: 'from-red-500 to-pink-500' }
   ];
 
@@ -147,15 +157,16 @@ export default function About() {
   function Target(props) { return <svg {...props} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>; }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-blue-900 text-white overflow-hidden relative">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 text-gray-900 overflow-hidden relative">
       {/* Animated Background */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute -top-40 -right-32 w-96 h-96 bg-cyan-500/10 rounded-full mix-blend-screen filter blur-3xl animate-blob"></div>
-        <div className="absolute -bottom-40 -left-32 w-96 h-96 bg-purple-500/10 rounded-full mix-blend-screen filter blur-3xl animate-blob animation-delay-2000"></div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-blue-500/10 rounded-full mix-blend-screen filter blur-3xl animate-blob animation-delay-4000"></div>
+        {/* Soft gradient orbs */}
+        <div className="absolute -top-40 -right-32 w-96 h-96 bg-gradient-to-r from-sky-200 to-blue-100 rounded-full mix-blend-multiply opacity-30 filter blur-3xl animate-blob"></div>
+        <div className="absolute -bottom-40 -left-32 w-96 h-96 bg-gradient-to-r from-emerald-200 to-teal-100 rounded-full mix-blend-multiply opacity-30 filter blur-3xl animate-blob animation-delay-2000"></div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-gradient-to-r from-violet-200 to-purple-100 rounded-full mix-blend-multiply opacity-30 filter blur-3xl animate-blob animation-delay-4000"></div>
         
-        {/* Grid Pattern */}
-        <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.05)_1px,transparent_1px)] bg-[size:50px_50px] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_50%,black,transparent)]"></div>
+        {/* Subtle grid pattern */}
+        <div className="absolute inset-0 bg-[linear-gradient(rgba(59,130,246,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(59,130,246,0.03)_1px,transparent_1px)] bg-[size:60px_60px] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_50%,black,transparent)]"></div>
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
@@ -164,10 +175,10 @@ export default function About() {
           isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
         }`}>
           <h1 className="text-5xl lg:text-6xl font-bold mb-6">
-            About <span className="bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">Me</span>
+            About <span className="bg-gradient-to-r from-blue-600 to-indigo-700 bg-clip-text text-transparent">Me</span>
           </h1>
-          <div className="w-24 h-1 bg-gradient-to-r from-cyan-400 to-blue-400 mx-auto mb-8 rounded-full"></div>
-          <p className="text-xl text-cyan-100 max-w-3xl mx-auto leading-relaxed">
+          <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-indigo-600 mx-auto mb-8 rounded-full"></div>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             Passionate Backend Developer specializing in Laravel and modern web technologies. 
             I build dynamic, scalable applications that drive business growth and deliver exceptional user experiences.
           </p>
@@ -178,11 +189,11 @@ export default function About() {
           <div className={`lg:col-span-1 transition-all duration-1000 delay-200 ${
             isVisible ? 'translate-x-0 opacity-100' : '-translate-x-10 opacity-0'
           }`}>
-            <div className="bg-white/10 backdrop-blur-lg rounded-3xl p-8 border border-cyan-500/20 hover:border-cyan-400/40 transition-all duration-500 shadow-2xl hover:shadow-cyan-500/10">
+            <div className="bg-white/80 backdrop-blur-lg rounded-3xl p-8 border border-gray-200 hover:border-blue-200 transition-all duration-500 shadow-xl hover:shadow-2xl">
               {/* Profile Image */}
               <div className="relative mb-6">
-                <div className="w-32 h-32 mx-auto bg-gradient-to-br from-cyan-500 to-blue-500 rounded-full p-1 shadow-2xl">
-                  <div className="w-full h-full bg-gray-800 rounded-full overflow-hidden">
+                <div className="w-32 h-32 mx-auto bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full p-1 shadow-lg">
+                  <div className="w-full h-full bg-white rounded-full overflow-hidden">
                     <Image
                       src="https://i.postimg.cc/8krYvQps/Remove-background-project-1.png"
                       alt="Sakib Al Mahamud"
@@ -193,26 +204,26 @@ export default function About() {
                   </div>
                 </div>
                 {/* Animated Ring */}
-                <div className="absolute inset-0 rounded-full border-2 border-cyan-400/30 animate-ping"></div>
+                <div className="absolute inset-0 rounded-full border-2 border-blue-300/50 animate-ping"></div>
               </div>
 
               <div className="text-center mb-6">
-                <h2 className="text-2xl font-bold text-cyan-100">Sakib Al Mahamud</h2>
-                <p className="text-cyan-300 font-medium">Full Stack Developer</p>
+                <h2 className="text-2xl font-bold text-gray-800">Sakib Al Mahamud</h2>
+                <p className="text-gray-600 font-medium">Full Stack Developer</p>
                 <div className="flex items-center justify-center gap-2 mt-2">
-                  <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
-                  <span className="text-sm text-green-400">Available for opportunities</span>
+                  <div className="w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></div>
+                  <span className="text-sm text-emerald-600">Available for opportunities</span>
                 </div>
               </div>
 
               <div className="space-y-4">
                 {[
-                  { icon: Mail, text: 'sakibalmahamud34@gmail.com', color: 'text-cyan-300' },
-                  { icon: Phone, text: '+880 1641 655173', color: 'text-green-300' },
-                  { icon: MapPin, text: 'Kuratolli, Dhaka, Bangladesh', color: 'text-red-300' },
-                  { icon: Calendar, text: '3+ Years Experience', color: 'text-purple-300' }
+                  { icon: Mail, text: 'sakibalmahamud34@gmail.com', color: 'text-blue-600' },
+                  { icon: Phone, text: '+880 1641 655173', color: 'text-emerald-600' },
+                  { icon: MapPin, text: 'Kuratolli, Dhaka, Bangladesh', color: 'text-red-500' },
+                  { icon: Calendar, text: '1+ Years Experience', color: 'text-purple-600' }
                 ].map((item, index) => (
-                  <div key={index} className="flex items-center gap-3 text-cyan-100 hover:text-cyan-50 transition-colors duration-300">
+                  <div key={index} className="flex items-center gap-3 text-gray-600 hover:text-gray-900 transition-colors duration-300">
                     <item.icon className={`h-5 w-5 ${item.color}`} />
                     <span className="text-sm">{item.text}</span>
                   </div>
@@ -220,19 +231,19 @@ export default function About() {
               </div>
 
               {/* Languages */}
-              <div className="mt-6 pt-6 border-t border-cyan-500/20">
-                <h3 className="font-semibold text-cyan-100 mb-3">Languages</h3>
+              <div className="mt-6 pt-6 border-t border-gray-200">
+                <h3 className="font-semibold text-gray-800 mb-3">Languages</h3>
                 <div className="space-y-3">
                   {[
-                    { language: 'Bangla', level: 100, color: 'from-green-500 to-emerald-500' },
-                    { language: 'English', level: 80, color: 'from-blue-500 to-cyan-500' }
+                    { language: 'Bangla', level: 100, color: 'from-emerald-500 to-teal-600' },
+                    { language: 'English', level: 80, color: 'from-blue-500 to-indigo-600' }
                   ].map((lang, index) => (
                     <div key={index}>
                       <div className="flex justify-between text-sm mb-1">
-                        <span className="text-cyan-200">{lang.language}</span>
-                        <span className="text-cyan-300">{lang.level}%</span>
+                        <span className="text-gray-700">{lang.language}</span>
+                        <span className="text-blue-600 font-medium">{lang.level}%</span>
                       </div>
-                      <div className="w-full bg-cyan-900/30 rounded-full h-2">
+                      <div className="w-full bg-gray-200 rounded-full h-2">
                         <div className={`bg-gradient-to-r ${lang.color} h-2 rounded-full transition-all duration-1000`} 
                              style={{ width: `${lang.level}%` }}></div>
                       </div>
@@ -242,7 +253,7 @@ export default function About() {
               </div>
 
               {/* Download CV Button */}
-              <button className="w-full mt-6 flex items-center justify-center gap-2 bg-gradient-to-r from-cyan-500 to-blue-500 text-white py-3 rounded-xl font-semibold hover:from-cyan-600 hover:to-blue-600 transition-all duration-300 transform hover:scale-105 shadow-lg">
+              <button className="w-full mt-6 flex items-center justify-center gap-2 bg-gradient-to-r from-blue-600 to-indigo-700 text-white py-3 rounded-xl font-semibold hover:from-blue-700 hover:to-indigo-800 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl shadow-blue-200">
                 <Download className="h-4 w-4" />
                 Download CV
               </button>
@@ -254,7 +265,7 @@ export default function About() {
             isVisible ? 'translate-x-0 opacity-100' : 'translate-x-10 opacity-0'
           }`}>
             {/* Tabs Navigation */}
-            <div className="bg-white/10 backdrop-blur-lg rounded-3xl p-2 mb-8 border border-cyan-500/20">
+            <div className="bg-white/80 backdrop-blur-lg rounded-3xl p-2 mb-8 border border-gray-200 shadow-lg">
               <div className="flex flex-wrap gap-2">
                 {tabs.map((tab) => (
                   <button
@@ -262,8 +273,8 @@ export default function About() {
                     onClick={() => setActiveTab(tab.id)}
                     className={`flex items-center gap-3 px-6 py-3 rounded-xl font-medium transition-all duration-300 ${
                       activeTab === tab.id
-                        ? 'bg-gradient-to-r from-cyan-500 to-blue-500 text-white shadow-lg'
-                        : 'text-cyan-100 hover:text-white hover:bg-white/5'
+                        ? 'bg-gradient-to-r from-blue-600 to-indigo-700 text-white shadow-lg shadow-blue-200'
+                        : 'text-gray-700 hover:text-gray-900 hover:bg-gray-100'
                     }`}
                   >
                     <tab.icon className="h-4 w-4" />
@@ -274,13 +285,13 @@ export default function About() {
             </div>
 
             {/* Tab Content */}
-            <div className="bg-white/10 backdrop-blur-lg rounded-3xl p-8 border border-cyan-500/20">
+            <div className="bg-white/80 backdrop-blur-lg rounded-3xl p-8 border border-gray-200 shadow-lg">
               {activeTab === 'skills' && (
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                   {Object.entries(skills).map(([category, skillList]) => (
                     <div key={category} className="space-y-6">
-                      <h3 className="text-xl font-bold text-cyan-100 capitalize flex items-center gap-3">
-                        <div className="w-2 h-2 bg-cyan-400 rounded-full animate-pulse"></div>
+                      <h3 className="text-xl font-bold text-gray-800 capitalize flex items-center gap-3">
+                        <div className="w-2 h-2 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-full animate-pulse"></div>
                         {category} Skills
                       </h3>
                       <div className="space-y-4">
@@ -288,16 +299,16 @@ export default function About() {
                           <div key={skill.name} className="group">
                             <div className="flex items-center justify-between mb-2">
                               <div className="flex items-center gap-3">
-                                <div className={`p-2 rounded-lg bg-gradient-to-r ${skill.color} text-white shadow-lg transform group-hover:scale-110 transition-transform duration-300`}>
+                                <div className={`p-2 rounded-lg bg-gradient-to-r ${skill.color} text-white shadow-md transform group-hover:scale-110 transition-transform duration-300`}>
                                   <skill.icon className="h-4 w-4" />
                                 </div>
-                                <span className="font-medium text-cyan-100">{skill.name}</span>
+                                <span className="font-medium text-gray-800">{skill.name}</span>
                               </div>
-                              <span className="text-cyan-300 font-semibold">{skill.level}%</span>
+                              <span className="text-blue-600 font-semibold">{skill.level}%</span>
                             </div>
-                            <div className="w-full bg-cyan-900/30 rounded-full h-3">
+                            <div className="w-full bg-gray-200 rounded-full h-3">
                               <div 
-                                className={`bg-gradient-to-r ${skill.color} h-3 rounded-full transition-all duration-1000 ease-out group-hover:shadow-lg group-hover:shadow-cyan-500/25`}
+                                className={`bg-gradient-to-r ${skill.color} h-3 rounded-full transition-all duration-1000 ease-out group-hover:shadow-md`}
                                 style={{ width: `${skill.level}%` }}
                               ></div>
                             </div>
@@ -311,36 +322,36 @@ export default function About() {
 
               {activeTab === 'education' && (
                 <div className="space-y-8">
-                  <h2 className="text-3xl font-bold text-cyan-100 mb-8 flex items-center gap-3">
-                    <GraduationCap className="h-8 w-8 text-cyan-400" />
+                  <h2 className="text-3xl font-bold text-gray-800 mb-8 flex items-center gap-3">
+                    <GraduationCap className="h-8 w-8 text-blue-600" />
                     Education & Academic Background
                   </h2>
                   {education.map((edu, index) => (
-                    <div key={edu.id} className="relative pl-12 pb-12 border-l-2 border-cyan-500/30 group last:border-l-0 last:pb-0">
-                      <div className="absolute left-0 -ml-3 w-6 h-6 rounded-full bg-gradient-to-r from-cyan-500 to-blue-500 shadow-lg transform group-hover:scale-125 transition-transform duration-300"></div>
-                      <div className="bg-white/5 backdrop-blur-lg rounded-3xl p-6 border border-cyan-500/20 hover:border-cyan-400/40 transition-all duration-500 hover:shadow-2xl hover:shadow-cyan-500/10">
+                    <div key={edu.id} className="relative pl-12 pb-12 border-l-2 border-blue-200 group last:border-l-0 last:pb-0">
+                      <div className="absolute left-0 -ml-3 w-6 h-6 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600 shadow-lg transform group-hover:scale-125 transition-transform duration-300"></div>
+                      <div className="bg-white rounded-3xl p-6 border border-gray-200 hover:border-blue-200 transition-all duration-500 hover:shadow-xl">
                         <div className="flex items-start gap-4">
-                          <div className={`p-3 rounded-2xl bg-gradient-to-r ${edu.color} shadow-lg`}>
+                          <div className={`p-3 rounded-2xl bg-gradient-to-r ${edu.color} shadow-md`}>
                             <edu.icon className="h-6 w-6 text-white" />
                           </div>
                           <div className="flex-1">
-                            <h3 className="text-xl font-bold text-cyan-100 mb-2">{edu.title}</h3>
-                            <p className="text-cyan-300 font-medium mb-3">{edu.institution}</p>
-                            <p className="text-cyan-200/80 text-sm flex items-center mb-4">
+                            <h3 className="text-xl font-bold text-gray-800 mb-2">{edu.title}</h3>
+                            <p className="text-gray-600 font-medium mb-3">{edu.institution}</p>
+                            <p className="text-gray-500 text-sm flex items-center mb-4">
                               <Calendar className="w-4 h-4 mr-2" />
                               {edu.period}
                             </p>
-                            <p className="text-cyan-100 mb-4">{edu.description}</p>
+                            <p className="text-gray-700 mb-4">{edu.description}</p>
                             {edu.awards && (
-                              <div className="bg-cyan-500/10 border-l-4 border-cyan-400 p-4 rounded-r-lg">
-                                <h4 className="font-semibold text-cyan-300 mb-2 flex items-center gap-2">
+                              <div className="bg-blue-50 border-l-4 border-blue-400 p-4 rounded-r-lg">
+                                <h4 className="font-semibold text-blue-700 mb-2 flex items-center gap-2">
                                   <Award className="h-4 w-4" />
                                   Awards & Achievements
                                 </h4>
-                                <ul className="text-cyan-200 space-y-1">
+                                <ul className="text-gray-600 space-y-1">
                                   {edu.awards.map((award, i) => (
                                     <li key={i} className="text-sm flex items-center gap-2">
-                                      <div className="w-1.5 h-1.5 bg-cyan-400 rounded-full"></div>
+                                      <div className="w-1.5 h-1.5 bg-blue-400 rounded-full"></div>
                                       {award}
                                     </li>
                                   ))}
@@ -357,50 +368,82 @@ export default function About() {
 
               {activeTab === 'certifications' && (
                 <div>
-                  <h2 className="text-3xl font-bold text-cyan-100 mb-8 flex items-center gap-3">
-                    <Award className="h-8 w-8 text-cyan-400" />
+                  <h2 className="text-3xl font-bold text-gray-800 mb-8 flex items-center gap-3">
+                    <Award className="h-8 w-8 text-blue-600" />
                     My Certifications
                   </h2>
                   <div className="grid md:grid-cols-2 gap-6">
                     {certifications.map((cert) => (
                       <div 
                         key={cert.id}
-                        className="bg-white/5 backdrop-blur-lg rounded-3xl overflow-hidden border border-cyan-500/20 hover:border-cyan-400/40 transition-all duration-500 transform hover:-translate-y-2 hover:shadow-2xl hover:shadow-cyan-500/10 group"
+                        className={`relative overflow-hidden rounded-3xl border-2 ${cert.borderColor} transition-all duration-500 transform hover:-translate-y-2 hover:shadow-2xl group`}
                       >
-                        <div className="relative h-48 overflow-hidden">
-                          <img 
-                            src={cert.image} 
-                            alt={`${cert.title} certificate`}
-                            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                            loading="lazy"
-                          />
-                          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
-                          <div className={`absolute top-4 right-4 p-3 rounded-2xl bg-gradient-to-r ${cert.color} shadow-lg transform group-hover:scale-110 transition-transform duration-300`}>
-                            <cert.icon className="h-5 w-5 text-white" />
+                        {/* Decorative gradient overlay */}
+                        <div className={`absolute inset-0 bg-gradient-to-br ${cert.color} opacity-0 group-hover:opacity-10 transition-opacity duration-500 -z-10`}></div>
+                        
+                        {/* Card content */}
+                        <div className="relative z-10">
+                          <div className="relative h-48 overflow-hidden">
+                            <img 
+                              src={cert.image} 
+                              alt={`${cert.title} certificate`}
+                              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                              loading="lazy"
+                            />
+                            <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 via-transparent to-transparent"></div>
+                            
+                            {/* Top right icon with glow effect */}
+                            <div className={`absolute top-4 right-4 p-3 rounded-2xl bg-gradient-to-br ${cert.color} shadow-lg transform group-hover:scale-110 group-hover:shadow-xl transition-all duration-300`}>
+                              <cert.icon className="h-6 w-6 text-white" />
+                            </div>
+                            
+                            {/* Title and subtitle overlay */}
+                            <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 to-transparent">
+                              <h3 className="text-xl font-bold text-white mb-1">{cert.title}</h3>
+                              <p className="text-gray-200 text-sm">{cert.subtitle}</p>
+                            </div>
                           </div>
-                          <div className="absolute bottom-4 left-4">
-                            <h3 className="text-lg font-bold text-white mb-1">{cert.title}</h3>
-                            <p className="text-cyan-200 text-sm">{cert.subtitle}</p>
-                          </div>
-                        </div>
-                        <div className="p-6">
-                          <p className="text-cyan-200 text-sm flex items-center mb-4">
-                            <span className="font-medium text-cyan-100 mr-2">Issued by:</span> {cert.issuer}
-                            <span className="mx-2">•</span>
-                            <Calendar className="w-4 h-4 mr-1" />
-                            {cert.year}
-                          </p>
-                          <div className="flex flex-wrap gap-2">
-                            {cert.tags.map((tag, i) => (
-                              <span 
-                                key={i}
-                                className="px-3 py-1 bg-cyan-500/20 text-cyan-300 text-xs font-medium rounded-full border border-cyan-500/30"
+                          
+                          <div className={`p-6 ${cert.bgGradient}`}>
+                            <div className="flex items-center justify-between mb-4">
+                              <div className="flex items-center gap-2">
+                                <span className="text-sm font-medium text-gray-700">Issued by</span>
+                                <span className="font-semibold text-gray-900">{cert.issuer}</span>
+                              </div>
+                              <div className="flex items-center gap-2 px-3 py-1 rounded-full bg-white/80 backdrop-blur-sm border border-gray-200">
+                                <Calendar className="h-4 w-4 text-gray-600" />
+                                <span className="text-sm font-medium text-gray-700">{cert.year}</span>
+                              </div>
+                            </div>
+                            
+                            <div className="flex flex-wrap gap-2">
+                              {cert.tags.map((tag, i) => (
+                                <span 
+                                  key={i}
+                                  className={`px-3 py-1.5 text-xs font-semibold rounded-full bg-white text-gray-800 border ${cert.borderColor} shadow-sm hover:shadow-md transition-all`}
+                                >
+                                  {tag}
+                                </span>
+                              ))}
+                            </div>
+                            
+                            <div className="mt-4 pt-4 border-t border-gray-200">
+                              <a 
+                                href={cert.image}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className={`inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-white text-sm font-medium border ${cert.borderColor} hover:shadow-md transition-all group-hover:shadow-lg`}
                               >
-                                {tag}
-                              </span>
-                            ))}
+                                <span>View Certificate</span>
+                                <ExternalLink className="h-3.5 w-3.5 text-gray-600 group-hover:text-blue-600 transition-colors" />
+                              </a>
+                            </div>
                           </div>
                         </div>
+                        
+                        {/* Decorative corner elements */}
+                        <div className={`absolute top-0 right-0 w-16 h-16 bg-gradient-to-bl ${cert.color} opacity-20 rounded-bl-3xl`}></div>
+                        <div className={`absolute bottom-0 left-0 w-16 h-16 bg-gradient-to-tr ${cert.color} opacity-20 rounded-tr-3xl`}></div>
                       </div>
                     ))}
                   </div>
@@ -412,12 +455,12 @@ export default function About() {
                   {softSkills.map((skill) => (
                     <div
                       key={skill.name}
-                      className="bg-white/5 backdrop-blur-lg rounded-2xl p-6 border border-cyan-500/20 hover:border-cyan-400/40 transition-all duration-500 transform hover:scale-105 group"
+                      className="bg-white rounded-2xl p-6 border border-gray-200 hover:border-blue-200 transition-all duration-500 transform hover:scale-105 group hover:shadow-lg"
                     >
                       <div className={`p-3 rounded-xl bg-gradient-to-r ${skill.color} w-12 h-12 flex items-center justify-center mb-4 transform group-hover:scale-110 transition-transform duration-300`}>
                         <skill.icon className="h-6 w-6 text-white" />
                       </div>
-                      <h3 className="font-bold text-cyan-100 text-lg">{skill.name}</h3>
+                      <h3 className="font-bold text-gray-800 text-lg">{skill.name}</h3>
                     </div>
                   ))}
                 </div>
@@ -427,14 +470,14 @@ export default function About() {
         </div>
 
         {/* Career Summary */}
-        <div className={`bg-gradient-to-r from-cyan-500/10 to-blue-500/10 backdrop-blur-lg rounded-3xl p-8 border border-cyan-500/20 transition-all duration-1000 delay-600 ${
+        <div className={`bg-gradient-to-r from-blue-50 to-indigo-50 backdrop-blur-lg rounded-3xl p-8 border border-blue-200 transition-all duration-1000 delay-600 ${
           isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
         }`}>
-          <h2 className="text-3xl font-bold text-cyan-100 mb-6 text-center flex items-center justify-center gap-3">
-            <Sparkles className="h-8 w-8 text-cyan-400" />
+          <h2 className="text-3xl font-bold text-gray-800 mb-6 text-center flex items-center justify-center gap-3">
+            <Sparkles className="h-8 w-8 text-blue-600" />
             Career Summary
           </h2>
-          <p className="text-lg text-cyan-100 leading-relaxed text-center max-w-4xl mx-auto">
+          <p className="text-lg text-gray-700 leading-relaxed text-center max-w-4xl mx-auto">
             Passionate Backend Developer with experience in full-stack web development using Laravel and Blade. 
             Skilled in building dynamic, scalable, and secure web applications, including CRUD operations, 
             responsive UI, and database management. Experienced in projects like e-commerce platforms and 
