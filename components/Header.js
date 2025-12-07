@@ -39,14 +39,25 @@ export default function Header() {
       if (pathname === '/') {
         const sections = ['home', 'about', 'projects', 'experience', 'contact'];
         const current = sections.find(section => {
+          // Skip the home section check to keep it active by default
+          if (section === 'home') return false;
+          
           const element = document.getElementById(section);
           if (element) {
             const rect = element.getBoundingClientRect();
+            // Only activate section if it's near the top of the viewport
             return rect.top <= 100 && rect.bottom >= 100;
           }
           return false;
         });
-        if (current) setActiveSection(current);
+        
+        // Only update if we found a section in view, otherwise keep 'home' active
+        if (current) {
+          setActiveSection(current);
+        } else if (window.scrollY < 100) {
+          // If scrolled to top, make sure 'home' is active
+          setActiveSection('home');
+        }
       }
     };
 
