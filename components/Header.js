@@ -2,19 +2,32 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { Menu, X, Code, Sparkles } from 'lucide-react';
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const [activeSection, setActiveSection] = useState('home');
+  const pathname = usePathname();
+  
+  // Determine active section based on pathname
+  const getActiveSection = () => {
+    if (pathname === '/') return 'home';
+    if (pathname.startsWith('/about')) return 'about';
+    if (pathname.startsWith('/projects')) return 'projects';
+    if (pathname.startsWith('/experience')) return 'experience';
+    if (pathname.startsWith('/contact')) return 'contact';
+    return '';
+  };
+  
+  const [activeSection, setActiveSection] = useState(getActiveSection());
 
   const navigation = [
-    { name: 'Home', href: '/', icon: Sparkles },
-    { name: 'About', href: '/about', icon: Code },
-    { name: 'Projects', href: '/projects', icon: Code },
-    { name: 'Experience', href: '/experience', icon: Code },
-    { name: 'Contact', href: '/contact', icon: Code },
+    { name: 'Home', href: '/', section: 'home', icon: Sparkles },
+    { name: 'About', href: '/about', section: 'about', icon: Code },
+    { name: 'Projects', href: '/projects', section: 'projects', icon: Code },
+    { name: 'Experience', href: '/experience', section: 'experience', icon: Code },
+    { name: 'Contact', href: '/contact', section: 'contact', icon: Code },
   ];
 
   useEffect(() => {
@@ -22,22 +35,27 @@ export default function Header() {
       const isScrolled = window.scrollY > 10;
       setScrolled(isScrolled);
 
-      // Update active section based on scroll position
-      const sections = ['home', 'about', 'projects', 'experience', 'contact'];
-      const current = sections.find(section => {
-        const element = document.getElementById(section);
-        if (element) {
-          const rect = element.getBoundingClientRect();
-          return rect.top <= 100 && rect.bottom >= 100;
-        }
-        return false;
-      });
-      if (current) setActiveSection(current);
+      // Only update active section based on scroll if we're on the home page
+      if (pathname === '/') {
+        const sections = ['home', 'about', 'projects', 'experience', 'contact'];
+        const current = sections.find(section => {
+          const element = document.getElementById(section);
+          if (element) {
+            const rect = element.getBoundingClientRect();
+            return rect.top <= 100 && rect.bottom >= 100;
+          }
+          return false;
+        });
+        if (current) setActiveSection(current);
+      }
     };
+
+    // Update active section when pathname changes
+    setActiveSection(getActiveSection());
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  }, [pathname]);
 
   return (
     <header className={`fixed top-0 w-full z-50 transition-all duration-500 ${
@@ -85,7 +103,7 @@ export default function Header() {
           {/* Enhanced Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-1 bg-white/5 backdrop-blur-lg rounded-2xl p-1 border border-cyan-500/20 shadow-lg">
             {navigation.map((item, index) => {
-              const isActive = activeSection === item.name.toLowerCase();
+              const isActive = activeSection === item.section;
               return (
                 <Link
                   key={item.name}
@@ -175,7 +193,7 @@ export default function Header() {
           
           <div className="relative px-3 pt-3 pb-6 space-y-2">
             {navigation.map((item, index) => {
-              const isActive = activeSection === item.name.toLowerCase();
+              const isActive = activeSection === item.section;
               return (
                 <Link
                   key={item.name}
